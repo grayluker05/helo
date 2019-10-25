@@ -13,6 +13,7 @@ massive(CONNECTION_STRING).then(db => {
 })
 
 app.post('/auth/register');
+app.post('/auth/login');
 
 const port = SERVER_PORT;
 app.listen(port, () => console.log(`Server is running on ${port}`));
